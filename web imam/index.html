@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ML Top Up</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>IMAM GASPOL TOPUP</h2>
+
+      <ul>
+        <li><a href="#" onclick="showMenu('home')">Home</a></li>
+        <li><a href="#" onclick="showMenu('diamond')">Diamond</a></li>
+        <li><a href="#" onclick="showMenu('promo')">Promo</a></li>
+        <li><a href="#" onclick="showMenu('tentang')">Tentang</a></li>
+        <li><a href="#" onclick="showMenu('kontak')">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <section id="home" class="menu active">
+      <div class="container">
+        <h1>Top Up Mobile Legends</h1>
+        <p>Selamat datang di website top up sederhana.</p>
+
+        <img src="pic/ML.png" alt="ML" />
+      </div>
+    </section>
+
+    <section id="diamond" class="menu">
+      <div class="container">
+        <h1>Top Up Diamond</h1>
+
+        <form id="topupForm">
+          <input type="text" id="userid" placeholder="Masukkan User ID" required />
+
+          <input type="text" id="nickname" placeholder="Masukkan Nickname" required />
+
+          <select id="diamondSelect" required>
+            <option value="">Pilih Diamond</option>
+            <option value="86 Diamond - Rp20.000">86 Diamond - Rp20.000</option>
+            <option value="172 Diamond - Rp40.000">172 Diamond - Rp40.000</option>
+            <option value="257 Diamond - Rp60.000">257 Diamond - Rp60.000</option>
+            <option value="344 Diamond - Rp80.000">344 Diamond - Rp80.000</option>
+          </select>
+
+          <button type="submit">Top Up Sekarang</button>
+        </form>
+
+        <div class="hasil" id="hasil">
+          <p id="output"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="promo" class="menu">
+      <div class="container">
+        <h1>Promo Hari Ini</h1>
+
+        <div class="card">
+          <h3>Promo 1</h3>
+          <p>Top Up 86 Diamond Gratis 5 Diamond.</p>
+        </div>
+
+        <div class="card">
+          <h3>Promo 2</h3>
+          <p>Diskon 10% untuk pembelian di atas Rp50.000.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang" class="menu">
+      <div class="container">
+        <h1>Tentang Website</h1>
+
+        <div class="about-box">
+          <p>Website top up ini dibuat untuk memudahkan pemain Mobile Legends melakukan pembelian diamond dengan cepat dan sederhana.</p>
+
+          <p>Project ini menggunakan HTML, CSS, dan JavaScript sebagai latihan membuat web statis sederhana oleh saya imam.</p>
+
+          <p>Website memiliki fitur navigasi menu, form top up, promo, dan tampilan responsive untuk mobile maupun desktop.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="menu">
+      <div class="container">
+        <h1>Kontak</h1>
+
+        <div class="contact-box">
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p>mltopup@gmail.com</p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Instagram</h3>
+            <p>@mltopup</p>
+          </div>
+
+          <div class="contact-card">
+            <h3>WhatsApp</h3>
+            <p>0812-3456-7890</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 gaspol TOPUP</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
